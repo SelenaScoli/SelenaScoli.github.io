@@ -1,0 +1,186 @@
+h1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+
+
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    width: 45%;
+}
+
+div {
+    width: 100%;
+}
+
+
+div img {
+    width: max(400px, 40vw);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+
+    margin: 0;
+    margin-bottom: 5%;
+    padding: 0;
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 4vw;
+
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scrollbar-color: #060B2E #8193C1;
+    scroll-behavior: smooth;
+}
+
+
+/* copied mdn */
+
+ul::scroll-button(*) {
+    border: 0;
+    font-size: 2rem;
+    background: none;
+    color: black;
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+ul::scroll-button(*):hover,
+ul::scroll-button(*):focus {
+    opacity: 1;
+}
+
+ul::scroll-button(*):active {
+    translate: 1px 1px;
+}
+
+ul::scroll-button(*):disabled {
+    opacity: 0.2;
+    cursor: unset;
+}
+
+ul::scroll-button(left) {
+    content: "◄";
+}
+
+ul::scroll-button(right) {
+    content: "►";
+}
+
+
+ul {
+    anchor-name: --my-carousel;
+}
+
+ul::scroll-button(*) {
+    position: absolute;
+    position-anchor: --my-carousel;
+}
+
+
+ul::scroll-button(left) {
+    right: calc(anchor(left) - 70px);
+    bottom: calc(anchor(top) + 13px);
+}
+
+ul::scroll-button(right) {
+    left: calc(anchor(right) - 70px);
+    bottom: calc(anchor(top) + 13px);
+}
+
+/* copied mdn */
+
+li {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style-type: none;
+    scroll-snap-align: center;
+}
+
+
+
+nav li {
+    display: inline;
+    margin: 1rem;
+
+}
+
+nav a {
+    font-family: "Bebas Neue", sans-serif;
+    text-decoration: none;
+    font-size: 2rem;
+    color: #060B2E;
+
+}
+
+nav a:hover {
+    color: #FF495C;
+}
+
+nav {
+    margin-bottom: 4rem;
+    border: solid 5px black;
+}
+
+p {
+    align-content: center;
+}
+
+
+@media (orientation: portrait) {
+    img {
+        border: solid 3px black;
+        width: 3rem;
+    }
+
+    section,
+    div {
+        width: 100%;
+    }
+
+    li img {
+        width: 15rem;
+        margin: 1rem;
+    }
+
+    #firstdrawing {
+        margin-left: 15%;
+    }
+
+    ol li {
+        width: 8rem;
+    }
+
+
+    h1 {
+        font-size: 150%;
+    }
+
+    h2 {
+        font-size: 80%;
+    }
+
+    nav a {
+        font-size: 80%;
+    }
+
+    nav {
+        border: solid 2px black;
+    }
+
+    ol {
+        margin: 3px;
+    }
+}

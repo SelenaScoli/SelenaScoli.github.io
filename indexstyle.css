@@ -1,0 +1,364 @@
+nav ol {
+    list-style: none;
+}
+
+#lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+li img {
+    width: 20rem;
+    border: solid 10px black;
+}
+
+#name {
+    position: relative;
+    bottom: -70px;
+    left: -370px;
+    margin: 0;
+    justify-content: start;
+    font-size: 10rem;
+
+}
+
+#name2 {
+    position: relative;
+    bottom: -50px;
+    left: -200px;
+    margin: 0;
+    font-size: 10rem;
+}
+
+#background {
+    position: absolute;
+    z-index: -3;
+
+    opacity: 90%;
+    margin-top: .7%;
+    margin-left: 20%;
+
+    /* width: 1170px; */
+    /* height: 1100px; */
+
+    width: 61%;
+    height: 110%;
+
+
+
+
+    object-fit: cover;
+
+
+}
+
+
+
+
+
+
+
+@media (max-width: 375px) {
+    iframe {
+        display: none;
+    }
+}
+
+
+@media (orientation: portrait) {
+
+    iframe {
+        display: none;
+    }
+
+    body {
+        margin: 1%;
+    }
+
+    html,
+    body {
+        height: 100%;
+        width: 100%;
+    }
+
+    iframe {
+        display: none;
+    }
+
+    #lists {
+
+        height: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+
+    }
+
+    ol {
+        margin: 0;
+        padding: 0;
+
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #listtwo ol {
+        align-items: flex-end;
+    }
+
+    #listone ol {
+        align-items: flex-start;
+    }
+
+    nav img {
+
+        border: solid 5px black;
+        width: 100%;
+    }
+
+    nav div,
+    nav li {
+        width: 30%;
+    }
+
+    h1 {
+        align-items: flex-end;
+        font-size: 65px !important;
+    }
+
+
+    #name2 {
+        position: relative;
+        left: 10%;
+    }
+
+    #name {
+        position: relative;
+        left: 2%;
+    }
+
+    #names {
+        position: relative;
+        bottom: 20%;
+    }
+}
+
+@media (max-width: 1836px) {
+
+
+    #background {
+        position: absolute;
+        z-index: -3;
+
+        opacity: 90%;
+        margin-top: .4%;
+        margin-left: 23%;
+
+
+
+        width: 55%;
+        height: 110%;
+
+
+
+
+        object-fit: cover;
+
+
+    }
+
+
+
+    #names {
+        margin-top: 7%;
+        margin-left: 18%;
+    }
+}
+
+@media (max-width: 1633px) {
+
+
+    #background {
+        position: absolute;
+        z-index: -3;
+
+        opacity: 90%;
+        margin-top: .4%;
+        margin-left: 23%;
+
+
+
+        width: 55%;
+        height: 110%;
+
+
+
+
+        object-fit: cover;
+
+
+    }
+
+
+
+    #names {
+        margin-top: 7%;
+        margin-left: 18%;
+    }
+}
+
+@media (max-width: 1563px) {
+    iframe {
+        display: none;
+    }
+
+    #names {
+        margin-left: 31%;
+    }
+}
+
+@media (max-width: 1180px) {
+    #names {
+        margin-left: 33%;
+    }
+}
+
+@media (max-width: 1127px) {
+    #names {
+        margin-left: 37%;
+    }
+}
+
+
+/* @media (max-width: 1124px) {
+    #names {
+        position: relative;
+        bottom: 16%;
+        left: -2%;
+        font-size: 1%;
+    }
+
+    h1 {
+        font-size: 5rem !important;
+    }
+
+    #listtwo {
+        position: relative;
+        bottom: -50%;
+    }
+} */
+
+@media (min-width: 1023px) and (max-width: 1024px) {
+    li img {
+        width: 14rem;
+    }
+
+
+
+    #name {
+        position: relative;
+        left: -95%;
+        font-size: 5rem;
+    }
+
+    #name2 {
+        position: relative;
+        left: 1%;
+        margin-left: -55%;
+        font-size: 5rem;
+    }
+}
+
+@media (max-width: 820px) {
+
+
+    #listtwo {
+        position: relative;
+        bottom: -20%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #listtwo {
+        position: static;
+    }
+}
+
+
+/* @media (max-width: 820px) {
+    #names {
+        margin-left: 5%;
+    }
+
+    #lists {
+
+        height: 1100px;
+    }
+} */
+
+@media (max-width: 650px) {
+
+    #listtwo {
+        position: static;
+    }
+
+    #names {
+        margin-left: 0%;
+        margin-top: 0%;
+    }
+}
+
+@media (max-width: 390px) {
+    #listtwo {
+        position: static;
+    }
+
+    #lists {
+        height: 840px;
+    }
+}
+
+@media (max-width: 375px) {
+    #listtwo {
+        position: static;
+    }
+
+    #lists {
+        height: 900px;
+    }
+
+
+}
+
+@media (max-width: 360px) {
+    #listtwo {
+        position: static;
+    }
+
+    #lists {
+        height: 840px;
+    }
+
+    /* 
+    li img {
+        width: 118px;
+    } */
+}
+
+
+@media (max-height: 800px) {
+    ol {
+        margin-bottom: 30%;
+    }
+}
+
+@media (max-height: 700px) {
+    ol {
+        margin-bottom: 60%;
+    }
+}

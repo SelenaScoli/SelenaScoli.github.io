@@ -1,0 +1,48 @@
+/* .bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+ */
+
+/* 
+.merriweather-<uniquifier> {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+} */
+
+html {
+  background-color: #D4E2FE;
+}
+
+
+p {
+
+  font-family: "Merriweather", serif;
+}
+
+
+h2,
+h1,
+h3,
+h4 {
+  font-family: "Bebas Neue", sans-serif;
+
+
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+a:hover {
+  color: #FF495C;
+}
+
+img {
+  border: solid 5px black;
+}
